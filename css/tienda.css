@@ -1,0 +1,213 @@
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+  }
+  
+hr {
+    color: #918f8f;
+}
+  
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0 10px; 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portada{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('/img/portada_tienda.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 15%; 
+    text-align: center;
+}
+
+.boton {
+  background-color: transparent;
+  border: 0.7px solid white;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 19px 32px;
+  text-decoration: none;
+  width: auto;
+}
+
+.boton:hover {
+  background-color: rgb(255, 255, 255);
+  color: #444141;
+}
+
+.portada h1 {
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 80px 5%;
+}
+
+.producto {
+  max-width: 280px; 
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+  
+.producto img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.variaciones-producto td {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1.5px solid #b1b1b1;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.variaciones-producto td:hover {
+  border: black solid 2px;
+}
+
+footer {
+  background-color: #ece9e9; 
+  padding: 6% 10%;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+footer section {
+  text-align: left;
+  width: 200px;
+}
+  
+footer h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 8px;
+  color: #7b7a7a;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+footer li:hover {
+  color: black;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #918f8f;
+  text-align: center;
+  font-weight: bold;
+}
+  
+@media (max-width: 780px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .iconos{
+      display: none;
+  } 
+
+  .portada h1 {
+    font-size: 2rem;
+  }
+
+  .portada p {
+    font-size: 0.9rem;
+  }
+
+  .boton {
+    font-size: 0.9rem;
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 480px){
+  header{
+    flex-direction: column;
+  }
+
+  .menu-principal{
+    font-size: 0.8rem;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+  .portada{
+    padding: 20% 10%;
+  }
+
+  footer div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer section {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px){
+  .portada{
+    padding: 30% 10% 20% 10%;
+  }
+}

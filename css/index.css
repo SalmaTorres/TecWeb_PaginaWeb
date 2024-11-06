@@ -1,0 +1,521 @@
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+
+hr {
+  color: #918f8f;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0 10px; 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/img/fondo_inicio1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 15%; 
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-style: italic;
+  margin: 2%;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.boton {
+  background-color: transparent;
+  border: 0.7px solid white;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 19px 32px;
+  text-decoration: none;
+  width: auto;
+}
+
+.boton:hover {
+  background-color: rgb(255, 255, 255);
+  color: #444141;
+}
+
+.popular {
+  padding: 80px 5%;
+}
+
+.popular h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.producto {
+  max-width: 280px; 
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.variaciones-producto td {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1.5px solid #b1b1b1;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.variaciones-producto td:hover {
+  border: black solid 2px;
+}
+
+.coleccion-musica {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(/img/fondo_inicio2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10%;
+}
+
+.coleccion-musica figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 450px;
+  margin: 0;
+}
+
+.coleccion-musica img {
+  height: 600px;
+  width: auto;
+}
+
+.coleccion-musica h2 {
+  margin: 30px 0;
+}
+
+.album-iconico figure {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.album-iconico img {
+  width: 50%;
+}
+
+.album-iconico figcaption {
+  max-width: 50%;
+  height: auto;
+  text-align: left;
+  padding: 8%;
+}
+
+.album-iconico h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.album-iconico p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.album-iconico .boton {
+  color: black;
+  border: black solid 0.5px;
+}
+
+.album-iconico .boton:hover {
+  background-color: rgba(0, 0, 0);
+}
+
+.album-maduro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/img/fondo_inicio3.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.album-maduro figure {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0;
+  padding: 0 8% 10% 8%;
+}
+
+.album-maduro img {
+  height: 600px;
+  margin-top: -17%;
+  filter: brightness(1.75);
+}
+
+.album-maduro h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.album-maduro p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.frase {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/fondo_inicio4.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  padding: 18% 10%; 
+  text-align: center;
+}
+
+.frase q {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.6;
+  quotes: "«" "»";
+}
+
+.frase cite {
+  font-size: 1rem;
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.beneficios .beneficio {
+  text-align: center;
+  width: 250px;
+}
+
+.beneficios img {
+  width: 30px; 
+  height: auto;  
+}
+
+.beneficios h4 {
+  margin: 10px 0 5px 0;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.beneficios p {
+  font-size: 1em;
+  color: #666;
+}
+
+.nosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/fondo_inicio5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 10%;
+  height: auto;
+  text-align: center; 
+}
+
+.nosotros h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.nosotros h4 {
+  margin: 10px 0 5px 0;
+  font-size: 1.3em;
+}
+
+.nosotros p {
+  font-size: 1em;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #ece9e9; 
+  padding: 6% 10%;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+footer section {
+  text-align: left;
+  width: 200px;
+}
+
+footer h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 8px;
+  color: #7b7a7a;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer li:hover {
+  color: black;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #918f8f;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .coleccion-musica {
+    justify-content: center;
+  }
+
+  .album-maduro figure {
+    padding: 10%;
+  }
+  
+  .album-maduro img {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .iconos{
+      display: none;
+  } 
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .boton {
+    font-size: 0.9rem;
+    padding: 15px 25px;
+  }
+
+  .popular h2 {
+    font-size: 2rem;
+  }
+
+  .coleccion-musica img{
+    width: 100%;
+    height: auto;
+  }
+
+  .album-iconico figure {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10%;
+  }
+
+  .album-iconico img {
+    width: 100%;
+    height: auto;
+  }
+
+  .album-iconico figcaption {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .album-iconico h2 {
+    font-size: 1.8rem;
+  }
+
+  .album-iconico p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .album-maduro {
+    padding: 10%;
+  }
+
+  .album-maduro figure {
+    padding: 10px;
+    width: 100%;
+    max-width: auto; 
+    margin: 0 auto;
+  }
+
+  .album-maduro img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%; 
+  }
+
+  .album-iconico .boton, .album-maduro .boton {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .frase q {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  
+  .frase cite {
+    font-size: 0.8rem;
+  }
+
+  .beneficios{
+    justify-content: center;
+}
+
+  .beneficios h4 {
+    font-size: 1.1em;
+  }
+  
+  .beneficios p {
+    font-size: 0.8em;
+  }
+
+  .beneficios .beneficio {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px){
+  header{
+    flex-direction: column;
+  }
+
+  .menu-principal{
+    font-size: 0.8rem;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+  .hero{
+    padding: 20% 10%;
+  }
+
+  .nosotros h2 {
+    font-size: 2.2rem;
+  }
+  
+  .nosotros h4 {
+    font-size: 1.1em;
+  }
+  
+  .nosotros p {
+    font-size: 0.7em;
+  }
+
+  footer div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer section {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px){
+  .hero{
+    padding: 30% 10% 20% 10%;
+  }
+
+  .coleccion-musica h2{
+    font-size: 1rem;
+    margin: 20px;
+  }
+}
