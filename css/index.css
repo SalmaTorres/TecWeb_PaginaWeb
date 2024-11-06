@@ -396,11 +396,15 @@ footer p {
   }
 
   #uno, #dos{
-    max-width: 250px;
+    max-width: 200px;
   }
 
   #tres, #cuatro{
     max-width: 100%;
+  }
+
+  .variaciones-producto td {
+    padding: 5px;
   }
 
   .coleccion-musica img{
@@ -496,6 +500,14 @@ footer p {
   }
   .hero{
     padding: 20% 10%;
+  }
+
+  #uno, #dos{
+    max-width: 100px;
+  }
+
+  #uno img, #dos img{
+    height: 200px;
   }
 
   .nosotros h2 {
