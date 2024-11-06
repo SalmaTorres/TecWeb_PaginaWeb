@@ -391,6 +391,18 @@ footer p {
     font-size: 2rem;
   }
 
+  .contenedor-productos{
+    justify-content: center;
+  }
+
+  #uno, #dos{
+    max-width: 250px;
+  }
+
+  #tres, #cuatro{
+    max-width: 100%;
+  }
+
   .coleccion-musica img{
     width: 100%;
     height: auto;
